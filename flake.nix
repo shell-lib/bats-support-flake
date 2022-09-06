@@ -19,7 +19,7 @@
           };
           installPhase = ''
             mkdir -p $out/bin
-            cp ./load.bash $out/bin/
+            cp ./load.bash $out/bin/$name.load.bash
             cp -r ./src $out/bin/
           '';
         };
